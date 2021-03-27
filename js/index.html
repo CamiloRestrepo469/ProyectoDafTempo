@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto DAF</title>
+    <!-- <link rel="stylesheet" href="/CSS/estilos.css"> -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration:none;
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+    .container{
+    width:95%;
+    max-width: 1500px;
+    overflow: hidden;
+    margin: auto;
+    padding: 50px 0;
+           }
+        header{
+    height:90vh;
+    background-image: linear-gradient(to top, rgba(136, 236, 253, 0.514) 0%, rgba(200, 236, 114, 0.698) 100%), url(https://www.camionerosenruta.com/wp-content/uploads/2018/12/DAF-trucks-1-750x425.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center ;
+            }
+        .head{
+            text-align: center;
+            padding:0;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+            color: rgb(0, 0, 0);
+        
+        }
+        /* <div class="container-servicio">
+                <img src="https://placeimg.com/640/480/tech" alt="" class="main img-galeria">
+          
+            </div> */
+        div.container-servicio img {
+            /* width: 110%;
+            height: 50%; */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+            background-image: linear-gradient(to top, rgba(136, 235, 253, 0.404) 0%, rgba(199, 236, 114, 0.493) 100%), url(https://placeimg.com/640/480/arch);
+            }
+        .main{
+            
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:fixed;
+            background-position:center ; */
+
+        }
+       
+        body {
+          background-color: rgb(255, 255, 255);
+        }
+        
+        h1 {
+          color: rgb(0, 0, 0.1);
+          margin-left: 60px;
+        }
+        p {
+            display: none;
+            padding: 25px;
+            }
+
+            div:hover p {
+            display: block;
+            }
+        .hamburger{
+            position: fixed;
+            /* z-index: 10; */
+            top: 30px;
+            right: 30px;
+            background:cornsilk;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 0 6px rgba(0,0,0, .5);
+        }
+        .menu-navegacion{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 30vw;
+            height: 100%;
+            background-image: linear-gradient(135deg, #321cf1a2 0%, #72aaf3d7 100%);
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items:center;
+            transition: transform .3s ease-in-out;
+            transform: translate(110%);
+            box-shadow: 0 0 6px rgba(0,0,0, .7)
+
+        }
+        .spread{
+            transform:translate(0);
+        }
+        .menu-navegacion a{
+            color:rgb(253, 253, 253);
+            text-decoration:none;
+        }
+        .titulo{
+            font-size: 80px;
+            margin-bottom: 15px;
+        }
+        .copy{
+            font-weight: 400;
+            font-size: 35px;
+        }
+        .subtitulo{
+            text-align: center;
+            font-weight: 300;
+            color: #1254cfb6;
+            margin-bottom: 40px;
+            font-size: 40px;
+
+        }
+        .container-servicio{
+            width:100%;
+            max-width: 1500px;
+            display:block;
+            margin:0 auto;
+            margin-bottom: 20px;
+            /* background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:fixed;
+            background-position:center ; */
+
+        }
+        .checklist-servicio{
+            width:45%;
+
+        }
+        .n-service{
+            margin: 5px;
+        }
+        .servi{
+            color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 4px;
+            width: 300px;
+            height: 300px;
+            text-align: justify;
+        }
+        .serviExpertos{
+            color: rgb(110, 10, 10);
+            margin: 25px;
+            padding: 4px;
+            width: 300px;
+            height: 300px;
+            text-align: justify;
+
+        }
+        .service{
+            margin-bottom: 20px;
+        }
+        .n-service{
+            margin-bottom: 7px;
+            color: #9f8ad0;
+        }
+        .number{
+            display:inline-block;
+            background-image: linear-gradient(to top, #c8f576 0%, #6297eccc 100%
+            );
+            width: 30px;
+            height: 30px;
+            color: #ffff;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 700;
+            line-height: 40px;
+            margin-right: 1px;
+        }
+        .gallery{
+            background: #f2f2f2;
+        }
+        .container-galeria{
+            display: flex;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+        }
+        .img-galeria{
+            object-fit: cover;
+            border-radius: 10px;
+            width: calc(33.3333% - 20px);
+            display: block;
+            margin-bottom: 15px;
+            box-shadow: 0 0 6px rgba(0, 0, .5);
+            cursor: pointer;
+        }
+        .imagen-light .descripcion{
+            position:fixed;
+            display: block;
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 10px;
+            max-width: 50%;
+            color: rgb(0, 0, 0);
+
+        }
+        .imagen-light{
+            position:fixed;
+            background: rgba(0,0,0,.9);
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            transform: translate(110%);
+            transition: transform .2s ease-in-out;
+
+        }
+        .show{
+            transform: translate(0);
+        }
+        .agregar-imgen{
+            object-fit: cover;
+            width:50%;
+            border-radius: 15px;
+            transform: scale(0);
+            transition:tranform .3s .2s;
+        }
+        .showImage{
+            transform: scale(1);
+        }
+        .close{
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            width: 40px;
+            cursor: pointer;
+
+        }
+
+/* imangen despegable  */
+
+.dropdown {
+            position: relative;
+            display: inline-block;
+            padding: 2;
+            margin: 5px;
+            z-index: 1;
+            border-radius: 40px;
+           
+
+           
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 1; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* expertos  */
+
+
+        .expert{
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center;
+            flex-wrap: wrap;
+        }
+        .cont-expert{
+            width:30%;
+            text-align:center;
+            margin-bottom: 20px;
+        }
+        .cont-expert img{
+            width:80%;
+            display:block;
+            margin:0 auto;
+
+        
+            }
+            .n-expert{
+                display:inline-block;
+                margin-top: 20px;
+                width:100%;
+                font-weight:400;
+            }
+            footer{
+                background-image: linear-gradient(to top, rgba(74, 155, 247, 0.514) 0%, rgba(114, 236, 144, 0.835) 100%);
+                /* background: #a6f075; */
+                padding-bottom: 0.1px;
+                
+            }
+            .footer-content{
+                display: flex;
+                justify-content:space-between;
+                align-items:center;
+                flex-wrap: wrap;
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .contact-us{
+                width:40%;
+                color: rgb(7, 7, 7);
+
+            }
+            .brand{
+                font-weight:500;
+                font-size:40px;
+            }
+            .brand+p{
+                font-weight:500;
+                }
+            .social-media{
+                    width:50%;
+                    display:flex;
+                    justify-content:flex-end;
+
+                }
+            .social-media-icon{
+                display:inline-block;
+                margin-left: 20px;
+                width: 60px;
+                height: 60px;
+                border-radius:50px;
+                text-align: center;
+                color: rgb(245, 10, 10);
+
+            }
+            .social-media-icon{
+                background: #fff;
+                color: #050505;
+            }
+            .social-media-icon i{
+                font-size: 30px;
+                line-height: 60px;
+
+            }
+            .line{
+                width:90%;
+                max-width: 1200px;
+                margin:0 auto;
+                height: 2px;
+                background: rgb(17, 17, 17);
+                margin-bottom: 60px;
+
+            }
+            
+@media only screen and (max-width: 700px) {
+   
+            
+             .menu-navegacion{
+                width:50%;
+            }
+            .titulo{
+                font: size 40px;
+            }
+            .container-servicio img{
+                width:80%;
+                margin-bottom: 40px;
+                }
+            .checklist-servicio{
+                width:80%;
+            }
+            .service{
+                margin-bottom: 30px;
+            }
+            .agregar-imgen{
+                width:80%;
+            }
+            .img-galeria{
+                width:45%;
+            }
+            .cont-expert{
+                width:80%;
+            }
+            .footer-content{
+                justify-content:center;
+            }
+            .social-media{
+                width:80%;
+                justify-content:space-evenly;
+            }
+            .social-media-icon{
+                margin-left: 0;
+            }
+            .social-media i{
+                margin-left:0;
+            }
+            .contact-us{
+                text-align:center;
+                width:80%;
+                margin-bottom: 40px;
+                }
+  }
+
+
+@media only screen and (max-width: 500px){
+        .menu-navegacion{
+            width:65vw;
+        }
+        .hamburger{
+            top: 20px;
+            right: 20px;
+
+        }
+        .titulo{
+            font-size: 30px;
+        }
+        .subtitulo{
+            font-size: 30px;
+        }
+        .agregar-imgen{
+            width:95%;
+        }
+        .img-galeria{
+            width:95%;
+        }
+        .social-media{
+            width:100%;
+        }
+        .contact-us{
+            width:90%;
+        }
+        
+    }
+
+
+
+
+            
+        
+
+
+
+
+        </style>
+
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="https://img.icons8.com/material-two-tone/24/000000/menu--v4.png" class="hamburger"/>
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#expertos">Expertos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="container head">
+            <h1 class="titulo">DAF - Kenworth de la Montaña</h1>
+            <p class="copy">Nuevos motores Paccar MX13 que ofrecen mayor potencia a revoluciones más bajas para máxima eficiencia con alto rendimiento y bajos costos operativos.
+                Nuevos diseños exteriores de cabina con mejoras aerodinámicas que aumentan la eficiencia de combustible y aumentan el valor de reventa.
+                Nuevos tipos de cajas de cambios con mayor torque a bajas revoluciones y relaciones traseras más rápidas para mayor eficiencia y economía de combustible.
+                Nuevos diseños interior de la cabina que ofrecen mayor seguridad para él conductor, mayor productividad.</p>
+        </div>
+        
+    </header>
+    <main>
+      
+        
+        <section class="container" id="servicio">
+            <h2 class="subtitulo">Servicio DAF</h2>
+            <div class="container-servicio item"
+            data-descripcion="1 solito para saber donde vamos  "
+            > 
+                <img src="https://i.pinimg.com/originals/b0/9a/4d/b09a4da72c52ac279c4814c11add2cec.png" alt="" class="main img-galeria">         
+            </div>
+        </section>
+
+        <!-- <iframe width="760px" height="500px" src="https://sway.office.com/s/F0tOkMqW0Re6sBLs/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe> -->
+
+        <section class="gallery" id="portafolio">
+            <div class="container">
+                <h2 class="subtitulo">Portafolio</h2>
+                
+               <div class="container-galeria"
+               data-descripcion="1 solito para saber donde vamos la prueba  "
+               
+               >
+                    <img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="" class="img-galeria">  
+                
+              
+                  
+                    
+                    <img src="https://www.pruebaderuta.com/wp-content/uploads/2020/03/llanta.jpg" alt="" class="img-galeria">  
+                 
+               
+                   
+                   
+                   <img src="https://c0.klipartz.com/pngpicture/929/131/sticker-png-car-daimler-ag-powertrain-freightliner-trucks-car-truck-car.png" alt="" class="img-galeria">
+                   <img src="https://www.notiziariomotoristico.com/media/arts/35-2017-daf-cf-daf-xf-40-percent-smaller-and-50-kg-lighter-eas.jpg"" class="img-galeria">
+                   <img src="https://www.zf.com/products/media/product_media/trucks_2/trucks_driveline_traxon/img_154/ZF_Truck_Automatgetriebe_TraXon_LH_130703_3_2_748px.png" alt="" class="img-galeria">
+                   <img src="https://daf.ua/~/media/images/daf%20trucks/trucks/euro-5/xf105/chassis/xf105_powered_to_profit_3.jpg?w=450" alt="" class="img-galeria">
+                   <img src="https://www.pruebaderuta.com/wp-content/uploads/2020/03/llanta.jpg" alt="" class="img-galeria">
+               </div> 
+            </div>
+        </section>
+        <!-- agregar imagen en linea -->
+        <section class="imagen-light" id="imagen-light">
+            <img src="https://img.icons8.com/fluent/48/000000/xbox-x.png"class="close"/>
+            <!-- <img src="/img/icons8-xbox-x-48.png" alt="" > -->
+            <img src="" alt="" class="agregar-imgen">
+            
+            <div class="service img-galeria ">
+                <h3 class="n-service"><span class="number">*</span>Descripcion</h3>
+                <p class="servi descripcion"></p>
+            </div>
+        </section>
+
+        <!-- expertos -->
+
+        <section class="container" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+
+            <div class="dropdown cont-expert img-galeria">
+                <img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="Cinque Terre" width="300" height="200">
+                <div class="dropdown-content" class="img-galeria">
+                <img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="Cinque Terre" width="600" height="300">
+                <div class="desc">La suspensión con absorción de energía y la estructura reforzada de la cabina con zonas especiales de absorción de impactos en las partes delantera y trasera proporcionan un nivel de seguridad del vehículo y de protección de los pasajeros que están a la cabeza del sector. </div>
+                </div>
+              </div>
+            <div class="dropdown cont-expert img-galeria">
+                <img src="https://www.pruebaderuta.com/wp-content/uploads/2020/03/llanta.jpg" alt="Cinque Terre" width="300" height="200" class="img-galeria">
+                <div class="dropdown-content">
+                <img src="https://www.pruebaderuta.com/wp-content/uploads/2020/03/llanta.jpg" alt="Cinque Terre" width="600" height="300" >
+                <div class="desc">El sistema de advertencia de salida de carril (LDWS) avisa al conductor si el vehículo comienza a desviarse del carril por un error del conductor, por signos de somnolencia o por una distracción.  </div>
+                </div>
+              </div>
+
+            <div class="dropdown cont-expert img-galeria">
+                <img src="https://www.notiziariomotoristico.com/media/arts/35-2017-daf-cf-daf-xf-40-percent-smaller-and-50-kg-lighter-eas.jpg" alt="Cinque Terre" width="300" height="200" class="img-galeria">
+                <div class="dropdown-content">
+                <img src="https://www.notiziariomotoristico.com/media/arts/35-2017-daf-cf-daf-xf-40-percent-smaller-and-50-kg-lighter-eas.jpg" alt="Cinque Terre" width="600" height="300">
+                <div class="desc">Con el objetivo de seguir mejorando la seguridad del vehículo y en la carretera, DAF ha presentado su nuevo y mejorado sistema de frenado de emergencia AEBS-3. La tercera generación de este sistema de seguridad avanzado pone a disposición del conductor un frenado totalmente autónomo que ayuda a evitar colisiones a una velocidad máxima de 80 km/h. </div>
+                </div>
+              </div>
+
+
+
+            <section class="expert">
+                <div class="cont-expert ">
+                    <img src="https://www.transporte3.com/images/galerias/grande/P_MAN_EBA55ca04ada3d62.jpg" alt="" srcset="" class="img-galeria">
+                    <h3 class="n-expert">Frenado de Emergencia</h3>
+                    <p class="serviExpertos desc">Con el objetivo de seguir mejorando la seguridad del vehículo y en la carretera, DAF ha presentado su nuevo y mejorado sistema de frenado de emergencia AEBS-3. La tercera generación de este sistema de seguridad avanzado pone a disposición del conductor un frenado totalmente autónomo que ayuda a evitar colisiones a una velocidad máxima de 80 km/h. 
+                    </p>
+
+                </div>
+                <div class="cont-expert ">
+                    <img src="https://www.daf.es/-/media/images/daf-trucks/safety-and-comfort-systems/euro-6/ldw.jpg" alt="" srcset="" class="img-galeria">
+                    <h3 class="n-expert">Advertencia Salida de Carril</h3>
+                    <p class="serviExpertos desc">El sistema de advertencia de salida de carril (LDWS) avisa al conductor si el vehículo comienza a desviarse del carril por un error del conductor, por signos de somnolencia o por una distracción.
+                    </p>
+
+                </div>
+                <div class="cont-expert">
+                    <img src="https://novologistica.com/wp-content/uploads/2017/09/DAF2-1024x574.jpg" alt="" srcset="" class="img-galeria">
+                    <h3 class="n-expert">Comodida e Inovación</h3>
+                    <p class="serviExpertos desc">La suspensión con absorción de energía y la estructura reforzada de la cabina con zonas especiales de absorción de impactos en las partes delantera y trasera proporcionan un nivel de seguridad del vehículo y de protección de los pasajeros que están a la cabeza del sector.
+                    </p>
+
+                </div>
+                
+            </section>
+        </section>
+
+
+
+    </main>
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="contact-us">
+                <h2 class="brand">| &copy; &reg;  2021 |</h2>
+                <pa>
+                    TEMPO Y DAF SOLUCIONES DE TRANSPORTE SOSTENIBLES
+                    
+                </pa>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                <i class='bx bxl-instagram'></i>
+                </a>
+            
+
+            </div>
+
+        </div>
+        <div class="line"></div>
+    </footer>
+
+
+    
+    <script>
+    
+const hamburger=document.querySelector('.hamburger');
+const menu=document.querySelector('.menu-navegacion');
+
+hamburger.addEventListener('click',()=>{
+    menu.classList.toggle("spread")
+})
+window.addEventListener('click', e=>{
+    if(menu.classList.contains('spread')
+            && e.target!=menu && e.target!=hamburger  ){
+                menu.classList.toggle("spread")
+
+    }
+})
+
+// console.log(menu);
+// console.log(hamburger);
+
+    </script>
+    
+
+
+    <script>
+const imagenes=document.querySelectorAll('.img-galeria');
+const expert=document.querySelectorAll('.imgexpertos');
+const imagenesLight=document.querySelector('.agregar-imgen')
+const contenedorLight=document.querySelector('.imagen-light')
+const hamburger1=document.querySelector('.hamburger');
+const descripcion=document.querySelectorAll('img-galeria .descripcion')
+
+
+console.log(imagenes)
+
+imagenes.forEach(imagen =>{
+    imagen.addEventListener('click', ()=>{
+        aparcerImagen(imagen.getAttribute('src'))
+        aparcerImagen(imagen.parentNode.parentNode.dataset.descripcion)
+        
+
+    })
+})
+
+contenedorLight.addEventListener('click', (e)=>{
+    if(e.target!=imagenesLight){
+        console.log(e.target)
+        contenedorLight.classList.toggle('show')
+        imagenesLight.classList.toggle('showImage')
+        expert.classList.toggle('showImage')
+        hamburger1.style.opacity = '1'
+    }
+})
+
+const aparcerImagen=(imagen)=>{
+    imagenesLight.src=imagen;
+    imagenesLight.innerHTML=descripcion;
+    // descripcion.
+    contenedorLight.classList.toggle('show')
+    imagenesLight.classList.toggle('showImage')
+    expert.classList.toggle('showImage')
+    hamburger1.style.opacity = '0'
+}
+
+// console.log(imagenes);
+// console.log(imagenesLight);
+// console.log(contenedorLight);
+
+
+    </script>
+
+
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js""></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js""></script> -->
+
+</body>
+</html>

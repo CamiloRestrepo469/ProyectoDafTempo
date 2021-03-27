@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height:100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.507) 100%), url(../img/vehicle.png);
+}
+
+.header{
+    height:100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.507) 100%), url(../img/vehicle.png);
+}
+p {
+    color: red;
+    text-align: center;
+  }
+
+body {
+  background-color: rgb(223, 117, 12);
+}
+
+h1 {
+  color: rgb(6, 101, 253);
+  margin-left: 40px;
+}
+
