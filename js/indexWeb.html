@@ -22,6 +22,35 @@ body {
   padding: 15px;
   background: #3b3939;
 }
+p.thick {
+  font-weight: bold;
+}
+
+/* visual del texto  */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  cursor: pointer;
+
+  /* posicion de tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 /* Título del encabezado / blog*/
 .header {
@@ -39,6 +68,10 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
   /* background: white; */
+}
+.tamano{
+    height: auto;
+    width: 100%;
 }
 
 .header h1 {
@@ -71,44 +104,96 @@ body {
 /* Columna izquierda */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 70%;
 }
 
 /* Columna derecha */
 .rightcolumn {
-  float: left;
-  width: 25%;
+  float: right;
+  width: 30%;
   background-color: #f1f1f1;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 /* Imagen falsa */
+
 .card .fakeimg_uno {
-    height:50vh;
+    height:30vh;
     background-image: url(https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1);
+    cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment:fixed; */
     background-position:center ;
-    /* background-color: rgb(17, 1, 1); */
-    width: 100%;
-    padding: 20px;
+    border-radius: 10px;
 }
+
 .card .fakeimg_dos {
     height:40vh;
-    background-image: url(https://www.zf.com/products/media/product_media/trucks_2/trucks_driveline_traxon/img_154/ZF_Truck_Automatgetriebe_TraXon_LH_130703_3_2_748px.png);
+    background-image: url(https://ficheros.publico.es/resources/motorimg/noticias/f1b8aeeb90e87d86cd6bf72988291f00_XL.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment:fixed; */
     background-position:center ;
-    /* background-color: rgb(17, 1, 1); */
-    width: 100%;
-    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.card .fakeimg_tres {
+    height:40vh;
+    background-image: url(https://www.daf.es/-/media/images/daf-trucks/trucks/euro-6/daf-cf/2017382-daf-cf-chassis.jpg?mw=1920&hash=42AC12D0A646099AB8191053F8C50547B91B1ABE);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.fakeimg_about_uno{
+    height:20vh;
+    background-image: url(https://besthqwallpapers.com/Uploads/18-2-2021/155677/thumb2-daf-blue-logo-4k-blue-brickwall-daf-logo-cars-brands.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.fakeimgpopularuno{
+    height:15vh;
+   
+    background-image: url(https://www.sobrecamiones.com/wp-content/uploads/2019/09/DAF-The-New-XF-Transport-Efficiency-visual-101702859-1050x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+img:hover {
+  transform: scaleX(-1);
+}
+.fakeimgpopulardos{
+    height:15vh;
+    background-image: url(https://www.sobrecamiones.com/wp-content/uploads/2016/07/daf-01-1050x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+.fakeimgpopulartres{
+    height:15vh;
+    background-image: url(https://avatarenergia.com/wp-content/uploads/2018/10/58-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    cursor: pointer;
+    border-radius: 10px;
+
 }
 
 /* Agregar un efecto de tarjeta para artículos */
 .card {
-  background-color: rgba(231, 230, 230, 0.911);
+   
+  background-color: rgb(236, 234, 234);
   padding: 20px;
   margin-top: 20px;
 }
@@ -142,7 +227,89 @@ body {
     float: none;
     width: 100%;
   }
+
+
 }
+
+/* footer */
+footer{
+          background-image: linear-gradient(to top, rgba(0, 0, 0, 0.404) 0%, rgba(0, 0, 0, 0.89) 100%);
+         /* background: #a6f075; */
+         padding-bottom: 0.1px;
+                
+            }
+            .footer-content{
+                display: flex;
+                justify-content:space-between;
+                align-items:center;
+                flex-wrap: wrap;
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .contact-us{
+                width:40%;
+                color: rgb(7, 7, 7);
+
+            }
+            .brand{
+                font-weight:500;
+                font-size:40px;
+                align-items: center;
+                display: flex;
+                
+            }
+            .brand+p{
+                font-weight:500;
+                }
+            .social-media{
+                    width:80%;
+                    display:flex;
+                    justify-content:flex-end;
+                    cursor: pointer;
+                }
+            .social-media:hover{
+                    width:80%;
+                    display:flex;
+                    justify-content:flex-end;
+                  
+                    
+                }
+                
+            .social-media-icon{
+                display:inline-block;
+                margin-left: 20px;
+                width: 60px;
+                height: 60px;
+                border-radius:50px;
+                text-align: center;
+                color: rgb(245, 10, 10);
+
+            }
+            .social-media-icon{
+                background: #fff;
+                color: #050505;
+            }
+            .social-media-icon i{
+                font-size: 30px;
+                line-height: 60px;
+
+            }
+            .line{
+                width:90%;
+                max-width: 1200px;
+                margin:0 auto;
+                height: 2px;
+                background: rgb(17, 17, 17);
+                margin-bottom: 60px;
+
+            }
+            .color{
+                color: rgb(236, 226, 226);
+            }
+
+
+
+
 </style>
 </head>
 <body>
@@ -165,42 +332,249 @@ body {
   <div class="leftcolumn">
     <div class="card">
       <h2>MOTOR PACCAR MX13</h2>
-      <div class="fakeimg_uno" style="height:200px;"></div>
-      <p></p>
-      <p> que ofrecen mayor potencia a revoluciones más bajas para máxima eficiencia con alto rendimiento y bajos costos operativos.</p>
+      <div class="fakeimg_uno" >
+        <!-- Modal -->
+        
+        <div  class="text-center fakeimg_uno opacidad"  data-bs-toggle="modal" data-bs-target="#examplexpertos" title="dar click">
+            <!-- <img src="" alt="" class="rounded mause"> -->
+            
+        </div>  
+        <!-- Modal -->
+        <div class="modal fade text-center" id="examplexpertos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">                  
+                    <h5 class="modal-title text-center " id="exampleModalLabel"><img src="https://www.daf.es/-/media/images/daf-trucks/trucks/euro-6/daf-cf/117150-daf-px-7-mx-11-mx-13.jpg?mw=1200&hash=B45D0A237C23F95729EEEEE4FCB79E8A8134A4F4" alt="" class="rounded mause tamano" > </h5>
+                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">                   
+                        </button>
+                    </div>
+                <div class="modal-body rounded">
+                        <h3><a href="https://www.daf.es/es-es/descubra-los-camiones-daf/daf-cf/linea-motriz-del-cf-de-daf">MOTOR PACCAR MX13</a> 
+                            La disponibilidad de los combustibles sostenibles que garantizan un menor impacto de emisiones de carbón es cada vez mayor.
+                        </h3>           
+                </div>            
+            </div>
+            </div>
+        </div>
+    
+        </div>
+      
     </div>
     <div class="card">
       <h2>TRANSMISION ZF TRAXON</h2>
       <h5>Mejora la maniobrabilidad a baja velocidad</h5>
-      <div class="fakeimg_dos" style="height:200px;"></div>
-      <p></p>
-      <p>Amplitud de marchas superior y mayor torque, 
-        permite tren motriz más veloz
-        </p>
+        <div class="fakeimg_dos" >
+            <!-- Modal -->
+            <div  class="text-center fakeimg_dos"  data-bs-toggle="modal" data-bs-target="#examplexpertosdos" title="dar click">
+                <!-- <img src="" alt="" class="rounded mause"> -->
+            </div>    
+            <!-- Modal -->
+            <div class="modal fade text-center" id="examplexpertosdos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">                  
+                        <h5 class="modal-title text-center " id="exampleModalLabel"><img src="https://www.recambiosejesycajas.com/wp-content/uploads/2015/07/maxresdefault-2.jpg" alt="" class="rounded mause tamano" > </h5>
+                            <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">                   
+                            </button>
+                        </div>
+                    <div class="modal-body rounded">
+                            <h3>
+                                Además, los ajustes de  <a href="https://especiales.publico.es/es/motor/noticia/tecnologia/1603/cambio-manual-zf-de-7-marchas">transmisión</a>  dedicados contribuyen a maximizar la eficiencia del vehículo y la comodidad del conductor en camiones que tienen que arrancar y parar constantemente durante sus operaciones diarias
+                            </h3>           
+                    </div>            
+                </div>
+            </div>
+        </div>
+        
+    
     </div>
+      
+    </div>
+    <div class="card">
+        <h2>Chasis ligero de hormigonera</h2>
+        
+          <div class="fakeimg_tres" >
+              <!-- Modal -->
+              <div  class="text-center fakeimg_tres"  data-bs-toggle="modal" data-bs-target="#examplexpetres" >
+                  <!-- <img src="" alt="" class="rounded mause"> -->
+              </div>    
+              <!-- Modal -->
+              <div class="modal fade text-center" id="examplexpetres" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                  <div class="modal-content">
+                          <div class="modal-dialog">
+                <div class="modal-content">                  
+                          <h5 class="modal-title text-center " id="exampleModalLabel"><img src="https://1.bp.blogspot.com/-pJMonlmCVEU/XzwQTiYBpHI/AAAAAAAAT9s/Ip00zI-1UBEiKEuYFwgGsR0-mws1V0jjACLcBGAsYHQ/s1600/nova-linha-DAF-XF-2020-8.jpg0" alt="" class="rounded mause tamano" > </h5>
+                              <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">                   
+                              </button>
+                          </div>
+                      <div class="modal-body rounded">
+                              <h3>
+                                 Gracias al sistema de dirección optimizado y la suspensión, los frenos de disco y la nueva unidad EAS compacta con tubo de escape vertical, el peso en vacío es de solo 9,150 kg, con lo que se consigue el <a href="https://www.daf.co.uk/en-gb/trucks/daf-cf/daf-cf-chassis">chasis</a>  más ligero de su clase.
+                              </h3>           
+                      </div>            
+                  </div>
+              </div>
+          </div>
+          
+      
+      </div>
+        
+      </div>
   </div>
+  
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>Daf</h2>
+      <div class="fakeimg_about_uno">
+           <!-- Modal -->
+        
+           <div  class="text-center fakeimg_about_uno opacidad"  data-bs-toggle="modal" data-bs-target="#_about_uno" title="dar click">
+            <!-- <img src="" alt="" class="rounded mause"> -->
+            
+        </div>  
+        <!-- Modal -->
+        <div class="modal fade text-center" id="_about_uno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">                  
+                    <h5 class="modal-title text-center " id="exampleModalLabel"><img src="https://i1.wp.com/diariodetransporte.com/wp-content/uploads/2020/06/DAFGT7.jpg?ssl=1" alt="" class="rounded mause tamano" > </h5>
+                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">                   
+                        </button>
+                    </div>
+                <div class="modal-body rounded">
+                        <h3>
+                           <a href="https://www.daf.es/es-es/descubra-los-camiones-daf/daf-cf/interior-del-cf-de-daf">CF</a>  no es solo el camión más versátil del sector, sino que también tiene un aspecto impecable tanto por dentro como por fuera.
+                        </h3>           
+                </div>            
+            </div>
+            </div>
+        </div>
+
+    
+      </div class="badge bg-primary text-wrap" style="width: 6rem;">
+      <h5><p class="thick"> La nueva serie de camiones</p></h5>
+      
+    </div>
+
+    <div class="card">
+      <h3>Lo ultimo en Daf</h3>
+      <div class="fakeimgpopularuno">
+            <!-- Modal -->
+        
+            <div  class="text-center fakeimgpopularuno opacidad"  data-bs-toggle="modal" data-bs-target="#popularUno" title="dar click">
+                <!-- <img src="" alt="" class="rounded mause"> -->
+                
+            </div>  
+            <!-- Modal -->
+            <div class="modal fade text-center" id="popularUno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">                  
+                        <h5 class="modal-title text-center " id="exampleModalLabel"><img src="https://www.daf.es/-/media/images/daf-trucks/trucks/euro-6/daf-xf/ultimate/daf-xf-cf-ultimate-package-2020147.jpg?mw=1920&hash=AB6EBE315894C4AD6A612325E8E5A54A8C431F41" alt="" class="rounded mause tamano" > </h5>
+                            <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">                   
+                            </button>
+                        </div>
+                    <div class="modal-body rounded">
+                            <h3>
+                                Los DAF que se reinventan Inspirados por la filosofía DAF Transport Efficiency, han presentado recientemente los DAF CF y DAF XF, con los que se alcanzan nuevas cotas de excelencia. Estos nuevos modelos toman el relevo de sus aclamados camiones Euro 6.
+                            </h3>           
+                    </div>            
+                </div>
+                </div>
+            </div>
+      </div>
+      <br>
+
+      <div class="fakeimgpopulardos">
+            <!-- Modal -->
+        
+            <div  class="text-center fakeimgpopulardos opacidad"  data-bs-toggle="modal" data-bs-target="#popularDos" title="dar click">
+                <!-- <img src="" alt="" class="rounded mause"> -->
+                
+            </div>  
+            <!-- Modal -->
+            <div class="modal fade text-center" id="popularDos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">                  
+                        <h5 class="modal-title text-center " id="exampleModalLabel"><img src="https://www.motorok.com/wp-content/uploads/camiones-daf.jpg" alt="" class="rounded mause tamano" > </h5>
+                            <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">                   
+                            </button>
+                        </div>
+                    <div class="modal-body rounded">
+                            <h3>
+                                Y CF no es solo el camión más versátil del sector, sino que también tiene un aspecto impecable tanto por dentro como por fuera. Las nuevas características exteriores y el nuevo diseño interior hacen que sea el vehículo más atractivo, cómodo y agradable a la hora de conducir.
+                            </h3>           
+                    </div>            
+                </div>
+                </div>
+            </div>
+      </div>
+      <hr>
+      <div class="fakeimgpopulartres">
+            <!-- Modal -->
+        
+            <div  class="text-center fakeimgpopulartres opacidad"  data-bs-toggle="modal" data-bs-target="#popularTres" title="dar click">
+                <!-- <img src="" alt="" class="rounded mause"> -->
+                
+            </div>  
+            <!-- Modal -->
+            <div class="modal fade text-center" id="popularTres" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">                  
+                        <h5 class="modal-title text-center " id="exampleModalLabel"><img src="https://www.cadenadesuministro.es/wp-content/uploads/2013/01/First-Choice-camiones-daf.jpg" alt="" class="rounded mause tamano" > </h5>
+                            <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">                   
+                            </button>
+                        </div>
+                    <div class="modal-body rounded">
+                            <h3>
+                                Y CF no es solo el camión más versátil del sector, sino que también tiene un aspecto impecable tanto por dentro como por fuera. Las nuevas características exteriores y el nuevo diseño interior hacen que sea el vehículo más atractivo, cómodo y agradable a la hora de conducir.
+                            </h3>           
+                    </div>            
+                </div>
+                </div>
+            </div>
+      </div>
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <h2>Sígueme</h2>
+      <div class="social-media">
+        <a href="#" class="social-media-icon">
+        <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="#" class="social-media-icon">
+        <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="#" class="social-media-icon">
+        <i class='bx bxl-instagram'></i>
+        </a>
+    
+
     </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <p>Soluciones de transporte</p>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="contact-us color">
+                <h2 class="brand">| &copy; &reg;  2021 |</h2>
+                <p>TEMPO Y DAF SOLUCIONES DE TRANSPORTE SOSTENIBLES</p>
+            </div>
+        </div>
+        <div class="line">
+          <div class="line">
+            <h5 class="color">Algunas imágenes utilizadas en este sitio web son propiedad de sus respectivas marcas. Las imágenes de DAF, Schmitz Cargobull, TRP y otras marcas son propiedad de sus respectivos dueños</h5>
+          </div>
+      </div>
+    </footer>
 </div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto DAF</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <!-- <link rel="stylesheet" href="/CSS/estilos.css"> -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,7 +39,7 @@ body{
     padding: 50px 0;
            }
         header{
-    height:90vh;
+    height:35vh;
     background-image: linear-gradient(to top, rgba(136, 236, 253, 0.514) 0%, rgba(200, 236, 114, 0.698) 100%), url(https://www.camionerosenruta.com/wp-content/uploads/2018/12/DAF-trucks-1-750x425.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,10 +57,22 @@ body{
             color: rgb(0, 0, 0);
         
         }
+        
+        .main_principal{
+            height:55vh;
+            width: 100px;
+    /* background-image:url(https://asturtruck.com/wp-content/uploads/GoodDesignAward.jpg); */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-attachment:fixed; */
+    background-position: center ;
+
+        }
         /* <div class="container-servicio">
                 <img src="https://placeimg.com/640/480/tech" alt="" class="main img-galeria">
           
             </div> */
+            
         div.container-servicio img {
             /* width: 110%;
             height: 50%; */
@@ -68,12 +82,25 @@ body{
             width: 75%;
             background-image: linear-gradient(to top, rgba(136, 235, 253, 0.404) 0%, rgba(199, 236, 114, 0.493) 100%), url(https://placeimg.com/640/480/arch);
             }
-        .main{
+
+        main button img{
+            display: flex;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+            max-width: 100px;
+            display:block;
+            margin:0 auto;
+            margin-bottom: 20px;
+            border: none;
+            object-fit: cover;
+            border-radius: 10px;
+            width: calc(33.3333% - 20px);
+            display: block;
+            margin-bottom: 15px;
+            border-bottom: none;
+            border-color: #fff;
             
-            /* background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment:fixed;
-            background-position:center ; */
+            
 
         }
        
@@ -82,8 +109,8 @@ body{
         }
         
         h1 {
-          color: rgb(0, 0, 0.1);
-          margin-left: 60px;
+          color: rgb(0, 0, 0);
+          margin-left: 70px;
         }
         p {
             display: none;
@@ -92,6 +119,43 @@ body{
 
             div:hover p {
             display: block;
+            }
+
+            .img-fluid{
+                max-width: 100%;
+                height: 30%;
+                border-radius: 15px;
+            }
+            .motores{
+                background-image: url(https://www.camionerosenruta.com/wp-content/uploads/2018/12/DAF-trucks-1-750x425.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment:fixed;
+                background-position:center ;
+                
+
+            }
+            .motores2{
+                background-image: url(https://media-exp1.licdn.com/dms/image/C4D1BAQGeyToWhJXrdA/company-background_10000/0/1567492872512?e=2159024400&v=beta&t=kxzIp58lYtI44H-5AS2W3ppKe8DYFRyBZUes1y4YTNk);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment:fixed;
+                background-position:center ;
+                
+
+            }
+            .motores3{
+                background-image: url(https://gesticotrans.com/wp-content/uploads/2019/11/03_DAF_CF_Electric_4x2-768x511.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment:fixed;
+                background-position:center ;
+                
+
+            }
+            .mause{
+                cursor: pointer;
+
             }
         .hamburger{
             position: fixed;
@@ -201,7 +265,7 @@ body{
             margin-right: 1px;
         }
         .gallery{
-            background: #f2f2f2;
+            background: #f8f6f6;
         }
         .container-galeria{
             display: flex;
@@ -340,7 +404,6 @@ body{
             .contact-us{
                 width:40%;
                 color: rgb(7, 7, 7);
-
             }
             .brand{
                 font-weight:500;
@@ -379,9 +442,14 @@ body{
                 max-width: 1200px;
                 margin:0 auto;
                 height: 2px;
-                background: rgb(17, 17, 17);
+                background: rgb(255, 255, 255);
                 margin-bottom: 60px;
 
+            }
+            .color{
+                color: rgb(255, 255, 255);
+                /* align-items: center; */
+                justify-content: space-evenly;
             }
             
 @media only screen and (max-width: 700px) {
@@ -463,15 +531,6 @@ body{
         
     }
 
-
-
-
-            
-        
-
-
-
-
         </style>
 
 </head>
@@ -480,99 +539,409 @@ body{
         <img src="https://img.icons8.com/material-two-tone/24/000000/menu--v4.png" class="hamburger"/>
         <nav class="menu-navegacion">
             <a href="#inicio">Inicio</a>
-            <a href="#servicio">Servicio</a>
-            <a href="#portafolio">Portafolio</a>
+            <a href="#servicio">Daf</a>
+            <a href="#Motores">Motores</a>
+            <a href="#ejes">Ejes y Transmision</a>
             <a href="#expertos">Expertos</a>
             <a href="#contacto">Contacto</a>
         </nav>
         <div class="container head">
-            <h1 class="titulo">DAF - Kenworth de la Montaña</h1>
-            <p class="copy">Nuevos motores Paccar MX13 que ofrecen mayor potencia a revoluciones más bajas para máxima eficiencia con alto rendimiento y bajos costos operativos.
+            <h1 class="titulo">DAF de la Montaña</h1>
+            <p class="copy">
                 Nuevos diseños exteriores de cabina con mejoras aerodinámicas que aumentan la eficiencia de combustible y aumentan el valor de reventa.
-                Nuevos tipos de cajas de cambios con mayor torque a bajas revoluciones y relaciones traseras más rápidas para mayor eficiencia y economía de combustible.
-                Nuevos diseños interior de la cabina que ofrecen mayor seguridad para él conductor, mayor productividad.</p>
+                </p>
         </div>
         
     </header>
     <main>
-                            <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img src="https://i.pinimg.com/originals/b0/9a/4d/b09a4da72c52ac279c4814c11add2cec.png" alt="" class="">
-                </button>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            
-                        <h5 class="modal-title" id="exampleModalLabel"><img src="https://i.pinimg.com/originals/b0/9a/4d/b09a4da72c52ac279c4814c11add2cec.png" alt="" class="" width="470px" height="300px"> </h5>
-                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
-                            <img src="https://img.icons8.com/fluent/48/000000/xbox-x.png"class="close"/>
-                        </button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href=""><img src="https://www.daf.es/-/media/images/daf-imagebank/euro-6/daf-model-range-euro-6/daf-cf-and-xf-euro-6-2017069.jpg" alt="" width="30" height="24"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/js/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/galeria.html">GALERIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./indexEj.html">HISTORIA</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- servicio -->
+        <section class="container" id="servicio">
+            <div class="container-servicio item main_principal"> 
+               <div  class="text-center servicio mause" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="https://novologistica.com/wp-content/uploads/2018/09/daf1.jpg" alt="" class="rounded main_principal">
+
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content servicio">
+                        <div class="modal-header">                            
+                        <h5 class="modal-title text-center" id="exampleModalLabel"><img src="https://novologistica.com/wp-content/uploads/2018/09/daf1.jpg" alt="" class="rounded"> </h5>
+                            <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                               </button>
                         </div>
-                        <div class="modal-body">
+                    <div class="modal-body servicio">
                             <h3>
-                               El sistema de advertencia de salida de carril (LDWS) avisa al conductor si el vehículo comienza a desviarse del carril por un error del conductor, por signos de somnolencia o por una distracción 
+                                DAF CF que ha sido rediseñado para superar el que ya era el mejor camión en todos los sentidos, como la fiabilidad, versatilidad, eficacia y confort para el conductor líderes de su clase. 
                             </h3>
-                            
-                        </div>
-                        <!-- <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">guardar nasda</button> -->
-                        </div> -->
+                        
                     </div>
-                    </div>
+                    <!-- <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">guardar nasda</button> -->
+                    <!-- </div> --> 
                 </div>
-                
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- motores -->
         
-        <section class="container" id="servicio">
-            <h2 class="subtitulo">Servicio DAF</h2>
-            <div class="container-servicio item"
-            data-descripcion="1 solito para saber donde vamos  "
-            > 
-                <img src="https://i.pinimg.com/originals/b0/9a/4d/b09a4da72c52ac279c4814c11add2cec.png" alt="" class="main img-galeria">         
-            </div>
-        </section>
+                        <section class="container gallery" id="Motores">
+                            <h2 class="subtitulo">Motores Paccar</h2>
+                            <div class="container-servicio item"> 
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <div class="col">
+                                    <div class="col">
+                                        <!-- Modal -->
+                                        <!-- Button trigger modal -->
+                            <div  class="text-center mause" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <img src="https://www.kenworth.com.mx/media/52832/120920_mx_hero2_fromjason0215-la-innovacion-como-estandar-motor.jpg" alt="" class="rounded mause">
+    
+                            </div>
+                            
+                            <!-- Modal -->
+                        
+                        <div class="modal fade motores" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel"> <img src="https://www.kenworth.com.mx/media/52832/120920_mx_hero2_fromjason0215-la-innovacion-como-estandar-motor.jpg" alt="" class="rounded"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>
+                                      La disponibilidad de los combustibles sostenibles que garantizan un menor impacto de emisiones de carbón es cada vez mayor  
+                                    </h3>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
 
-        <section class="container" id="servicio">
-            <h2 class="subtitulo">Servicio DAF</h2>
-            <div class="container-servicio item"
-            data-descripcion="1 solito para saber donde vamos  "
-            > 
-                <img src="https://i.pinimg.com/originals/b0/9a/4d/b09a4da72c52ac279c4814c11add2cec.png" alt="" class="main img-galeria">         
-            </div>
-        </section>
 
+                        
 
-        <!-- <iframe width="760px" height="500px" src="https://sway.office.com/s/F0tOkMqW0Re6sBLs/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe> -->
-
-        <section class="gallery" id="portafolio">
-            <div class="container">
-                <h2 class="subtitulo">Portafolio</h2>
-                
-               <div class="container-galeria"
-               data-descripcion="1 solito para saber donde vamos la prueba  "
-               
-               >
-                    <img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="" class="img-galeria">  
-                
-              
-                  
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        
+                                    <h5 class="modal-title" id="exampleModalLabel"><img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="" class="motores mause"> </h5>
+                                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="https://img.icons8.com/fluent/48/000000/xbox-x.png"class="close"/>
+                                        </button>
+                                    </div>
+                                <div class="modal-body">
+                                        <h3>
+                                            na
+                                        </h3>
+                                    
+                                </div>
+                                <!-- <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">guardar nasda</button> -->
+                                <!-- </div> --> -->
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                     
-                    <img src="https://www.pruebaderuta.com/wp-content/uploads/2020/03/llanta.jpg" alt="" class="img-galeria">  
-                 
-               
-                   
-                   
-                   <img src="https://c0.klipartz.com/pngpicture/929/131/sticker-png-car-daimler-ag-powertrain-freightliner-trucks-car-truck-car.png" alt="" class="img-galeria">
-                   <img src="https://www.notiziariomotoristico.com/media/arts/35-2017-daf-cf-daf-xf-40-percent-smaller-and-50-kg-lighter-eas.jpg"" class="img-galeria">
-                   <img src="https://www.zf.com/products/media/product_media/trucks_2/trucks_driveline_traxon/img_154/ZF_Truck_Automatgetriebe_TraXon_LH_130703_3_2_748px.png" alt="" class="img-galeria">
-                   <img src="https://daf.ua/~/media/images/daf%20trucks/trucks/euro-5/xf105/chassis/xf105_powered_to_profit_3.jpg?w=450" alt="" class="img-galeria">
-                   <img src="https://www.pruebaderuta.com/wp-content/uploads/2020/03/llanta.jpg" alt="" class="img-galeria">
-               </div> 
+                    <div class="col">
+                      <div class="col">
+                        <div  class="text-center" data-bs-toggle="modal" data-bs-target="#exampleModaldos">
+                            <img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="" class="rounded mause">
+    
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade motores2" id="exampleModaldos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        
+                                    <h5 class="modal-title" id="exampleModalLabel"><img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="" class="" > </h5>
+                                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                           
+                                        </button>
+                                    </div>
+                                <div class="modal-body">
+                                        <h3>
+                                            PACCAR MX son compatibles con GTL (reducción de hasta un 5 % de CO2), HVO (reducción de hasta un 80 % de CO2) y BTL (reducción de hasta un 80 % de CO2).
+                                        </h3>
+                                    
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="col">
+                          <div  class="text-center" data-bs-toggle="modal" data-bs-target="#exampleModaltres">
+                              <img src="https://preview.free3d.com/img/2017/02/2408151902765188417/wb0adi1b-900.jpg" alt="" class="rounded mause">
+      
+                          </div>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade motores3" id="exampleModaltres" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                      <div class="modal-header">
+                                          
+                                      <h5 class="modal-title" id="exampleModalLabel"><img src="https://preview.free3d.com/img/2017/02/2408151902765188417/wb0adi1b-900.jpg" alt="" class="" > </h5>
+                                          <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                              
+                                          </button>
+                                      </div>
+                                  <div class="modal-body">
+                                          <h3>
+                                            Nuevos sistemas de gestión de combustible y aire de alta eficacia.
+                                          </h3>
+                                      
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>         
             </div>
         </section>
+
+        <!-- ejes y transmision -->
+
+        <section class="container gallery" id="ejes">
+            <h2 class="subtitulo">NUEVOS EJES TRASEROS & TRANSMISION TRAXON</h2>
+            <div class="container-servicio item"> 
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="col">
+
+                          <!-- Modal -->
+                              <div  class="text-center" data-bs-toggle="modal" data-bs-target="#exampleModalejes">
+                                <img src="http://www.nexotrans.com/fotos/1/600DAF_Components_New_Driven_Bus_Axle.jpg" alt="" class="rounded mause">
+        
+                            </div>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalejes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                            
+                                        <h5 class="modal-title text-center" id="exampleModalLabel"><img src="http://www.nexotrans.com/fotos/1/600DAF_Components_New_Driven_Bus_Axle.jpg" alt="" class="rounded mause" > </h5>
+                                            <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                                <!-- <img src="https://img.icons8.com/fluent/48/000000/xbox-x.png"class="close"/> -->
+                                            </button>
+                                        </div>
+                                    <div class="modal-body">
+                                            <h3>
+                                                Ejes traseros altamente eficientes con cubos de rueda de baja fricción. 
+                                            </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="col">
+                        <div  class="text-center" data-bs-toggle="modal" data-bs-target="#exampleModaltransimision">
+                            <img src="https://www.recambiosejesycajas.com/wp-content/uploads/2015/07/maxresdefault-2.jpg" alt="" class="rounded mause">
+    
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModaltransimision" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        
+                                    <h5 class="modal-dialog modal-dialog-centered" id="exampleModalLabel"><img src="https://www.recambiosejesycajas.com/wp-content/uploads/2015/07/maxresdefault-2.jpg" alt="" class="" > </h5>
+                                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                        </button>
+                                    </div>
+                                <div class="modal-body">
+                                        <h3>
+                                            El cambio rápido y suave ofrece eficacia y confort. 
+                                        </h3>
+                                    
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="col">
+                        <div  class="text-center" data-bs-toggle="modal" data-bs-target="#exampleModalTraxon">
+                            <img src="https://www.zf.com/products/media/product_media/trucks_2/trucks_driveline_traxon/img_154/Traxon_Intarder_Truck_Kupplung_cut_3_2_748px.png" alt="" class="rounded mause">
+    
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalTraxon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        
+                                    <h5 class="modal-title" id="exampleModalLabel"><img src="https://www.zf.com/products/media/product_media/trucks_2/trucks_driveline_traxon/img_154/Traxon_Intarder_Truck_Kupplung_cut_3_2_748px.png" alt="" class="" > </h5>
+                                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                        </button>
+                                    </div>
+                                <div class="modal-body">
+                                        <h3>
+                                            Por su parte, la transmisión ofrece unas características de maniobrabilidad excelentes a baja velocidad. 
+                                        </h3>
+                                    
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>         
+            </div>
+        </section>  
+       
+        <section class="container gallery" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <div class="container-servicio item"> 
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="col">
+
+                          <!-- Modal -->
+                              <div  class="text-center" data-bs-toggle="modal" data-bs-target="#examplexpertos">
+                                <img src="https://www.transporte3.com/images/galerias/grande/P_MAN_EBA55ca04ada3d62.jpg" alt="" class="rounded mause">
+        
+                            </div>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="examplexpertos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                            
+                                        <h5 class="modal-title text-center" id="exampleModalLabel"><img src="https://www.transporte3.com/images/galerias/grande/P_MAN_EBA55ca04ada3d62.jpg" alt="" class="rounded mause" > </h5>
+                                            <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                               
+                                            </button>
+                                        </div>
+                                    <div class="modal-body">
+                                            <h3>
+                                                Sistema de seguridad avanzado pone a disposición del conductor un frenado totalmente autónomo que ayuda a evitar colisiones a una velocidad máxima de 80 km/h. 
+                                            </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="col">
+                        <div  class="text-center" data-bs-toggle="modal" data-bs-target="#exampleModalexpertosdos">
+                            <img src="https://www.daf.es/-/media/images/daf-trucks/safety-and-comfort-systems/euro-6/ldw.jpg" alt="" class="rounded mause">
+    
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalexpertosdos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        
+                                        <h5 class="modal-title text-center" id="exampleModalLabel"><img src="https://www.daf.es/-/media/images/daf-trucks/safety-and-comfort-systems/euro-6/ldw.jpg" alt="" class="rounded mause" > </h5>
+                                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                        </button>
+                                    </div>
+                                <div class="modal-body">
+                                        <h3>
+                                            El sistema de advertencia de salida de carril (LDWS) avisa al conductor si el vehículo comienza a desviarse del carril por un error del conductor, por signos de somnolencia o por una distracción.
+                                        </h3>
+                                    
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="col">
+                        <div  class="text-center" data-bs-toggle="modal" data-bs-target="#examplexpertrostres">
+                            <img src="https://novologistica.com/wp-content/uploads/2017/09/DAF2-1024x574.jpg" alt="" class="rounded mause">
+    
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="examplexpertrostres" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        
+                                    <h5 class="modal-title" id="exampleModalLabel"><img src="https://novologistica.com/wp-content/uploads/2017/09/DAF2-1024x574.jpg" alt="" class="" > </h5>
+                                        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                                        </button>
+                                    </div>
+                                <div class="modal-body">
+                                        <h3>
+                                            La suspensión con absorción de energía y la estructura reforzada de la cabina con zonas especiales de absorción de impactos en las partes delantera y trasera proporcionan un nivel de seguridad del vehículo y de protección de los pasajeros que están a la cabeza del sector. 
+                                        </h3>
+                                    
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>         
+            </div>
+        </section> 
+          
         <!-- agregar imagen en linea -->
         <section class="imagen-light" id="imagen-light">
             <img src="https://img.icons8.com/fluent/48/000000/xbox-x.png"class="close"/>
@@ -584,74 +953,15 @@ body{
                 <p class="servi descripcion"></p>
             </div>
         </section>
-
-        <!-- expertos -->
-
-        <section class="container" id="expertos">
-            <h2 class="subtitulo">Expertos en:</h2>
-
-            <div class="dropdown cont-expert img-galeria">
-                <img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="Cinque Terre" width="300" height="200">
-                <div class="dropdown-content" class="img-galeria">
-                <img src="https://i2.wp.com/www.transportelatino.net/wp-content/uploads/2015/11/paccar4.jpg?resize=850%2C560&ssl=1" alt="Cinque Terre" width="600" height="300">
-                <div class="desc">La suspensión con absorción de energía y la estructura reforzada de la cabina con zonas especiales de absorción de impactos en las partes delantera y trasera proporcionan un nivel de seguridad del vehículo y de protección de los pasajeros que están a la cabeza del sector. </div>
-                </div>
-              </div>
-            <div class="dropdown cont-expert img-galeria">
-                <img src="https://www.pruebaderuta.com/wp-content/uploads/2020/03/llanta.jpg" alt="Cinque Terre" width="300" height="200" class="img-galeria">
-                <div class="dropdown-content">
-                <img src="https://www.pruebaderuta.com/wp-content/uploads/2020/03/llanta.jpg" alt="Cinque Terre" width="600" height="300" >
-                <div class="desc">El sistema de advertencia de salida de carril (LDWS) avisa al conductor si el vehículo comienza a desviarse del carril por un error del conductor, por signos de somnolencia o por una distracción.  </div>
-                </div>
-              </div>
-
-            <div class="dropdown cont-expert img-galeria">
-                <img src="https://www.notiziariomotoristico.com/media/arts/35-2017-daf-cf-daf-xf-40-percent-smaller-and-50-kg-lighter-eas.jpg" alt="Cinque Terre" width="300" height="200" class="img-galeria">
-                <div class="dropdown-content">
-                <img src="https://www.notiziariomotoristico.com/media/arts/35-2017-daf-cf-daf-xf-40-percent-smaller-and-50-kg-lighter-eas.jpg" alt="Cinque Terre" width="600" height="300">
-                <div class="desc">Con el objetivo de seguir mejorando la seguridad del vehículo y en la carretera, DAF ha presentado su nuevo y mejorado sistema de frenado de emergencia AEBS-3. La tercera generación de este sistema de seguridad avanzado pone a disposición del conductor un frenado totalmente autónomo que ayuda a evitar colisiones a una velocidad máxima de 80 km/h. </div>
-                </div>
-              </div>
-
-
-
-            <section class="expert">
-                <div class="cont-expert ">
-                    <img src="https://www.transporte3.com/images/galerias/grande/P_MAN_EBA55ca04ada3d62.jpg" alt="" srcset="" class="img-galeria">
-                    <h3 class="n-expert">Frenado de Emergencia</h3>
-                    <p class="serviExpertos desc">Con el objetivo de seguir mejorando la seguridad del vehículo y en la carretera, DAF ha presentado su nuevo y mejorado sistema de frenado de emergencia AEBS-3. La tercera generación de este sistema de seguridad avanzado pone a disposición del conductor un frenado totalmente autónomo que ayuda a evitar colisiones a una velocidad máxima de 80 km/h. 
-                    </p>
-
-                </div>
-                <div class="cont-expert ">
-                    <img src="https://www.daf.es/-/media/images/daf-trucks/safety-and-comfort-systems/euro-6/ldw.jpg" alt="" srcset="" class="img-galeria">
-                    <h3 class="n-expert">Advertencia Salida de Carril</h3>
-                    <p class="serviExpertos desc">El sistema de advertencia de salida de carril (LDWS) avisa al conductor si el vehículo comienza a desviarse del carril por un error del conductor, por signos de somnolencia o por una distracción.
-                    </p>
-
-                </div>
-                <div class="cont-expert">
-                    <img src="https://novologistica.com/wp-content/uploads/2017/09/DAF2-1024x574.jpg" alt="" srcset="" class="img-galeria">
-                    <h3 class="n-expert">Comodida e Inovación</h3>
-                    <p class="serviExpertos desc">La suspensión con absorción de energía y la estructura reforzada de la cabina con zonas especiales de absorción de impactos en las partes delantera y trasera proporcionan un nivel de seguridad del vehículo y de protección de los pasajeros que están a la cabeza del sector.
-                    </p>
-
-                </div>
-                
-            </section>
-        </section>
-
-
-
     </main>
     <footer id="contacto">
         <div class="container footer-content">
             <div class="contact-us">
                 <h2 class="brand">| &copy; &reg;  2021 |</h2>
-                <pa>
+                <p>
                     TEMPO Y DAF SOLUCIONES DE TRANSPORTE SOSTENIBLES
                     
-                </pa>
+                </p>
             </div>
             <div class="social-media">
                 <a href="./" class="social-media-icon">
@@ -668,11 +978,15 @@ body{
             </div>
 
         </div>
-        <div class="line"></div>
-    </footer>
-
-
-    
+   </footer>
+   <div class="w3-black w3-center w3-padding-14 w3-hover-opacity ">
+    <div class="line">
+        <div class="line">
+          <h6 class="color">Algunas imágenes utilizadas en este sitio web son propiedad de sus respectivas marcas. Las imágenes de DAF, Schmitz Cargobull, TRP y otras marcas son propiedad de sus respectivos dueños</h6>
+        </div>
+    </div>
+      
+    <a href="#" title="cr" target="_blank" class="w3-hover-opacity">&copy;&reg; 2021</a></div>  
     <script>
     
 const hamburger=document.querySelector('.hamburger');
