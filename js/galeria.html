@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Galeria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+.social-media{
+            width:100%;
+        }
+        .social-media-icon{
+                margin-left: 0;
+            }
+            .social-media i{
+                margin-left:0;
+            }
+            a {
+    text-decoration:none;
+                }
+                .line{
+                width:90%;
+                max-width: 1900px;
+                margin:0 auto;
+                height: 2px;
+                background: rgb(255, 255, 255);
+                margin-bottom: 60px;
+
+            }
+            .color{
+                color: rgb(255, 255, 255);
+                /* align-items: center; */
+                justify-content: space-evenly;
+            }
+            .menu{
+              border-radius: 10px;
+            }
+</style>
+<body class="w3-light-grey">
+
+<!-- Barra lateral / menú -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <br><br> 
+  <a href="/js/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a> 
+  <a href="#galeria" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACTO</a>
+  <a href="/js/indexEj.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HISTORIA</a> 
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-24">CLOSE</a> 
+</nav>
+
+<!-- Menú superior en pantallas pequeñas -->
+<header class="w3-container w3-top w3-black w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding menu"> <a href="/js/index.html"><img src="https://www.daf.es/-/media/images/daf-imagebank/euro-6/daf-model-range-euro-6/daf-cf-and-xf-euro-6-2017069.jpg" alt="" width="50" height="40" title="HOME"></a></span>
+  <span class="w3-left w3-padding"><a href="#">GALERIA</a></span>
+  <span class="w3-left w3-padding"><a href="/js/indexEj.html">HISTORIA</a></span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white menu w3-padding-8"  onclick="w3_open()">☰</a>
+</header>
+
+<!-- Efecto de superposición al abrir la barra lateral en pantallas pequeñas -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !¡CONTENIDO DE PÁGINA! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!--mosaico de imágenes -->
+  <div class="w3-row w3-grayscale-min" id="galeria">
+    <div class="w3-quarter">
+      <img src="https://www.daf.es/-/media/images/daf-trucks/trucks/euro-6/daf-cf/2017080-cf-exterior.jpg?mw=1200&hash=632ADE79C1824E169773E977BD024F4A2F31DA93" style="width:100%" onclick="onClick(this)" alt="La versión más comercial del Truck of the Year 2018 visita nuestra web, el DAF XF 480 Space Cab.">
+      <img src="https://www.daf.es/-/media/images/press-releases/product-introductions/2020/daf-cf-and-xf-available-with-switchable-front-wheel-drive.jpg?mw=1200&hash=8AC8294707C53473F5A631AB6C96450A88726729" style="width:100%" onclick="onClick(this)" alt="En la reciente remodelación de las gamas XF y CF los vehículos DAF han ganado 20 CV, lo que supone que el nuevo PRÍNCIPE AZUL del constructor de Eindhoven sea ahora este XF 480">
+      <img src="https://www.sobrecamiones.com/wp-content/uploads/2019/09/DAF-The-New-XF-Transport-Efficiency-visual-101702859-2100x1200.jpg" style="width:100%" onclick="onClick(this)" alt="A pesar de ofrecer 480 CV de potencia nominal, sus prestaciones en la 12ª marcha son aún mayores.">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="https://i.pinimg.com/originals/67/51/82/675182e75447a5dbb8ab2edcec16427e.png" style="width:100%" onclick="onClick(this)" alt="motor Paccar de 13 litros sigue manteniendo su arquitectura lineal de seis cilindros con culata monobloque y multiválvulas.">
+      <img src="https://www.camionerosenruta.com/wp-content/uploads/2018/12/DAF-trucks-1-750x425.jpg" style="width:100%" onclick="onClick(this)" alt="En los nuevos XF y CF del constructor holandés destacan como novedades el aumento en 20 CV del escalonamiento de su potencia, la utilización de la nueva caja de cambios ZF TRAXON y la incorporación de un grupo trasero más largo">
+      <img src="https://www.quadis.es/documents/80345/95274/nuevo-concesionario-de-camio.jpg/6300f137-f180-430d-a9b3-18b72ba72f85?t=1470652631000" style="width:100%" onclick="onClick(this)" alt="El resto de las funciones, como la activación manual del cambio y del retardador que lleva instalado, se realiza desde el mando que lleva instalado a la derecha de la caña de la dirección.">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="https://d2e5b8shawuel2.cloudfront.net/vehicle/265039/hrv/original.jpg" style="width:100%" onclick="onClick(this)" alt="Es de destacar la suavidad entre el motor y la caja de cambios TraXon.">
+      <img src="https://pbs.twimg.com/media/EmyE5D4XIAA_rH8.jpg" style="width:100%" onclick="onClick(this)" alt=" Algo que me ha gustado mucho en este XF es su sistema de dirección, su precisión en el guiado nos ha parecido perfecto.">
+      <img src="https://i.pinimg.com/originals/d3/3a/aa/d33aaaf2ec9b02d9a1dc25fe15c97ea4.jpg" style="width:100%" onclick="onClick(this)" alt=" Para el descanso este modelo XF presenta una única litera con unas medidas generosas (810 mm de ancho y 2.200 mm de largo).">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.camionactualidad.es/media/k2/items/cache/f9139627d49a687693ce4757dbe18044_XL.jpg" style="width:100%" onclick="onClick(this)" alt="El parachoques, fabricado en acero galvanizado, está pensado para soportar una peor vida por su situación en el inferior de la cabina,">
+      <img src="https://www.camionactualidad.es/media/k2/items/cache/b993005df322af8bfcea215941e130e6_XL.jpg" style="width:100%" onclick="onClick(this)" alt="El motor Paccar MX 13 y la caja de cambios ZF TraXon forman un dúo muy equilibrado y hacen posible que la conducción sea suave en todo momento.">
+      <img src="https://www.cadenadesuministro.es/wp-content/uploads/2020/09/DAF_CF-tractora-electrica.jpg" style="width:100%" onclick="onClick(this)" alt="Los mandos y sistemas están bien situados y el acceso a los mismos no requiere una atención extra">
+    </div>
+  </div>
+  
+  <!-- Modal para imágenes a tamaño completo al hacer clic-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Acerca de la sección -->
+  <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about"> 
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h2 class="w3-wide w3-center">CONTACTO</h2>      
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Medellin, COL<br>
+        <i class="fa fa-phone" style="width:30px"></i> Telefono: +57 357938485<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Correo: grestrepo@rentingcolombia.com<br>
+        <hr class="w3-opacity">
+      </div>
+      
+    </div>
+  </div>
+
+ 
+
+  <!-- Footer -->
+  
+  <footer class="w3-container w3-padding-32 w3-black" id="contact">  
+    <div class="w3-row-padding">
+      <div class="w3-third">            
+      </div>
+         <div class="w3-third">
+        <h3></h3>
+        <ul class="w3-ul">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <li class="w3-padding-16 w3-hover-black">
+            <p class="w3-medium"> <img src="https://media2.giphy.com/media/u2pmTWUi0MXjyrMaVj/200w.webp?cid=ecf05e47g3wu4zmcad1rfqxo7bd9f756dxehkbslqfxa7388&rid=200w.webp" alt="Computer man" style="width:48px;height:48px;" class="foter"><a href="" target="_blank"></a></p>         
+          </li>      
+      </div>
+    </div>  
+  </footer> 
+  <div class="w3-black w3-center w3-padding-10 w3-hover-opacity ">
+    
+        
+          <h6 class="color">Algunas imágenes utilizadas en este sitio web son propiedad de sus respectivas marcas. Las imágenes de DAF, Schmitz Cargobull, TRP y otras marcas son propiedad de sus respectivos dueños</h6>
+        
+    
+      
+    <a href="#" title="cr" target="_blank" class="w3-hover-opacity">&copy;&reg; 2021</a></div>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
